@@ -14,7 +14,7 @@ export default function ProductForm({ product }: ProductFormProps) {
         <input
           id="name"
           type="text"
-          className="mt-2 block w-full p-3 bg-gray-50"
+          className="mt-2 block w-full bg-gray-50 p-3"
           placeholder="Nombre del Producto"
           name="name"
           defaultValue={product?.name}
@@ -28,7 +28,7 @@ export default function ProductForm({ product }: ProductFormProps) {
         <input
           id="price"
           type="number"
-          className="mt-2 block w-full p-3 bg-gray-50"
+          className="mt-2 block w-full bg-gray-50 p-3"
           placeholder="Precio Producto. ej. 200, 300"
           name="price"
           defaultValue={product?.price}

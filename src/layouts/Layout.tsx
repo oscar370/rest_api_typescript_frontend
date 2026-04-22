@@ -11,7 +11,7 @@ export default function Layout() {
         </div>
       </header>
 
-      <main className="mt-10 mx-auto max-w-6xl p-10 bg-white shadow">
+      <main className="mx-auto mt-10 max-w-6xl bg-white p-10 shadow">
         <Outlet />
       </main>
     </>

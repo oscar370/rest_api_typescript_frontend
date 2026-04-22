@@ -57,7 +57,7 @@ export default function EditProduct() {
           </label>
           <select
             id="availability"
-            className="mt-2 block w-full p-3 bg-gray-50"
+            className="mt-2 block w-full bg-gray-50 p-3"
             name="availability"
             defaultValue={product?.availability.toString()}
           >
@@ -71,7 +71,7 @@ export default function EditProduct() {
 
         <input
           type="submit"
-          className="mt-5 w-full bg-indigo-600 p-2 text-white font-bold text-lg cursor-pointer rounded"
+          className="mt-5 w-full cursor-pointer rounded bg-indigo-600 p-2 text-lg font-bold text-white"
           value="Guardar Cambios"
         />
       </Form>

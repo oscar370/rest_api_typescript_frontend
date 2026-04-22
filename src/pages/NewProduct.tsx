@@ -33,7 +33,7 @@ export default function NewProduct() {
 
         <input
           type="submit"
-          className="mt-5 w-full bg-indigo-600 p-2 text-white font-bold text-lg cursor-pointer rounded"
+          className="mt-5 w-full cursor-pointer rounded bg-indigo-600 p-2 text-lg font-bold text-white"
           value="Registrar Producto"
         />
       </Form>

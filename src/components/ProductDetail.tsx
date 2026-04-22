@@ -27,7 +27,7 @@ export default function ProductDetail({ product }: ProductDetailProps) {
   const isAvailable = product.availability;
 
   return (
-    <tr className="border-b ">
+    <tr className="border-b">
       <td className="p-3 text-lg text-gray-800"> {product.name} </td>
       <td className="p-3 text-lg text-gray-800">
         {formatCurrency(product.price)}
@@ -40,14 +40,14 @@ export default function ProductDetail({ product }: ProductDetailProps) {
             value={product.id}
             className={`${
               isAvailable ? "text-black" : "text-red-600"
-            } rounded-lg p-2 text-sm uppercase font-bold w-full border border-black-100 hover:cursor-pointer`}
+            } border-black-100 w-full rounded-lg border p-2 text-sm font-bold uppercase hover:cursor-pointer`}
           >
             {isAvailable ? "Disponible" : "No disponible"}
           </button>
         </fetcher.Form>
       </td>
       <td className="p-3 text-lg text-gray-800">
-        <div className="flex gap-2 items-center">
+        <div className="flex items-center gap-2">
           <button
             onClick={() =>
               navigate(`productos/${product.id}/editar`, {
@@ -56,7 +56,7 @@ export default function ProductDetail({ product }: ProductDetailProps) {
                 },
               })
             }
-            className="bg-indigo-600 text-white rounded-lg w-full p-2 uppercase font-bold text-xs text-center cursor-pointer"
+            className="w-full cursor-pointer rounded-lg bg-indigo-600 p-2 text-center text-xs font-bold text-white uppercase"
           >
             Editar
           </button>
@@ -74,7 +74,7 @@ export default function ProductDetail({ product }: ProductDetailProps) {
             <input
               type="submit"
               value="Eliminar"
-              className="bg-red-600 text-white rounded-lg w-full p-2 uppercase font-bold text-xs text-center cursor-pointer"
+              className="w-full cursor-pointer rounded-lg bg-red-600 p-2 text-center text-xs font-bold text-white uppercase"
             ></input>
           </Form>
         </div>

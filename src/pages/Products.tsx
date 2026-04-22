@@ -36,7 +36,7 @@ export default function Products() {
       </div>
 
       <div className="p-2">
-        <table className="w-full mt-5 table-auto">
+        <table className="mt-5 w-full table-auto">
           <thead className="bg-slate-800 text-white">
             <tr>
               <th className="p-2">Producto</th>
